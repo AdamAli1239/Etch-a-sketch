@@ -7,12 +7,11 @@ for(let i=0;i<256;i++){
 }
 
 
-const selectedDiv = document.querySelector(".haha");
+const selectedDiv = document.querySelectorAll(".haha");
 
 
-selectedDiv.addEventListener("mouseover",event=>{
-    event.target.style.backgroundColor="yellow"
+selectedDiv.forEach(element =>{
+    element.addEventListener("mouseover",event=>{
+        event.target.style.backgroundColor="yellow"
+    })
 })
-
-
-console.log(selectedDiv)
