@@ -1,7 +1,7 @@
 const container = document.querySelector("#container");
 for(let i=0;i<256;i++){
     const div = document.createElement('div')
-    div.classList.add("haha")
+    div.classList.add("cube")
     container.appendChild(div)
 
 }
@@ -17,10 +17,11 @@ promptUser.addEventListener("click",() =>{
     let userInt = parseInt(userInput)
     for (let i=0;i<userInt;i++){
         const divvy = document.createElement('div')
-        divvy.classList.add("haha")
+        divvy.classList.add("cube")
         container.appendChild(divvy)
     }
-    const selectedDiv = document.querySelectorAll(".haha");
+
+const selectedDiv = document.querySelectorAll(".cube");
 
 
 selectedDiv.forEach(element =>{
@@ -38,7 +39,7 @@ selectedDiv.forEach(element =>{
 
    
 })
-const selectedDiv = document.querySelectorAll(".haha");
+const selectedDiv = document.querySelectorAll(".cube");
 
 
 selectedDiv.forEach(element =>{
